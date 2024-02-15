@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Nissan GT-R.html">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid red; */
+            align-items: center;
+            justify-content: space-between;
+            padding: 2% 3% 2% 5%;
+        }
+
+        .header-brandname {
+            align-items: center;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 48px;
+            letter-spacing: -0.03em;
+            text-align: left;
+            color: #3563E9;
+        }
+
+        .search-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 35%;
+            border: 1px solid #C3D4E966;
+            border-radius: 70px;
+            padding: 8px 16px;
+        }
+
+
+        .search-box input[type="text"] {
+            border: none;
+            width: 70%;
+            margin: 0 8px;
+        }
+
+        .search-box input[type="text"]:focus-visible {
+            outline: none;
+        }
+
+
+        .search-box i {
+            color: #596780;
+
+
+        }
+
+        ::placeholder {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+            letter-spacing: -0.02em;
+            text-align: justified;
+            color: #596780;
+        }
+
+        .header-icon {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: right;
+            width: 20%;
+        }
+
+        .crical {
+            padding: 8px;
+            border-radius: 90px;
+            border: 1px solid #C3D4E966;
+            color: #596780;
+            align-items: center;
+            justify-content: center;
+            margin-left: 8px;
+        }
+
+        .crical-avator {
+            padding: 0;
+            border: none;
+            margin-left: 8px;
+
+        }
+
+        .crical-avator img {
+            min-width: 5px;
+            max-width: 40px;
+            width: 100%;
+            height: 100%;
+            margin-left: 8px;
+
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 48px;
+            letter-spacing: -0.03em;
+            text-align: left;
+        }
+
+
+
+
+
+        @media only screen and (max-width: 480px) {
+            header {
+                justify-content: space-between;
+                padding: 7% 4%;
+            }
+
+            .header-brandname {
+                display: none;
+            }
+
+            .search-box {
+                display: none;
+            }
+
+            .crical {
+                display: none;
+            }
+
+            .crical-avator img {
+                max-width: 30px;
+                width: 100%;
+            }
+
+            .iconmin-bar {
+                display: flex;
+                /* border: 1px solid red; */
+
+            }
+
+            .iconmin-bar i {
+
+                width: 24%;
+            }
+
+            .brandnamemin {
+                display: flex;
+                margin-top: 5%;
+
+            }
+
+            .hader-boxmin {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 4%;
+                padding-right: 4%;
+                margin-top: 10%;
+                margin-bottom: 5%;
+            }
+
+            .search-boxmin {
+                display: flex;
+                width: 78%;
+                padding: 8px 16px;
+                border-radius: 10px;
+                border: 1px solid #C3D4E966;
+
+            }
+
+            .search-boxmin input[type="text"] {
+                border: none;
+                width: 89%;
+                margin: 0 8px;
+            }
+
+            .search-boxmin input[type="text"]:focus-visible {
+                outline: none;
+            }
+
+            .search-boxmin i {
+                color: #596780;
+            }
+
+            .search-boxmin1 {
+                display: flex;
+                width: 16%;
+                border: 1px solid #C3D4E966;
+                border-radius: 10px;
+                padding: 8px 20px;
+            }
+
+
+        }
+
+        .continr {
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid green; */
+            background-color: #F6F7F9;
+        }
+
+        .saidbar {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid red; */
+            width: 25%;
+            padding-left: 1%;
+            background-color: #fff;
+
+
+        }
+
+        .continr-right {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid blue; */
+            width: 75%;
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 15px;
+            letter-spacing: -0.02em;
+            text-align: left;
+        }
+
+        input[type=text] {
+            border: 1px solid #90A3BF;
+        }
+
+        .blue-chekbox:checked {
+            accent-color: #3563E9;
+        }
+
+        input[type="range"] {
+            accent-color: blue;
+
+        }
+
+        input {
+            margin-bottom: 40px;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .saidbar {
+                display: none;
+            }
+
+        }
+
+        .continer-banr1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+            background-color: #F6F7F9;
+            padding: 2% 4%;
+            padding-bottom: 0;
+        }
+
+        .continer-banr1-pick {
+            width: 45%;
+            /* border: 1px solid yellow; */
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 2% 5%;
+        }
+
+        .continer-banr1-pick1 {
+            width: 80%;
+            /* border: 1px solid green; */
+            display: flex;
+            flex-direction: row;
+            background-color: #fff;
+
+        }
+
+        .pick {
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            margin-right: 11%;
+            /* border: 1px solid red; */
+
+        }
+
+        .pickcenter {
+            /* width: 15%; */
+            /* position: relative; */
+            border: none;
+            /* margin-left: 70px; */
+
+        }
+
+        .pickcenter img {
+            min-width: 15px;
+            max-width: 150px;
+            width: 100%;
+            height: 100%;
+            /* padding-right: 70px; */
+            margin-right: 67px;
+        }
+
+        .border-left {
+            border-left: 1px solid #C3D4E966;
+            height: 50px;
+            margin-top: 20px;
+            padding-left: 35px;
+            margin-left: 5%;
+    padding-left: 3%;
+
+        }
+
+
+        @media only screen and (max-width: 480px) {
+            .continr-right {
+                width: 100%;
+            }
+
+            .continer-banr1 {
+                flex-direction: column;
+                justify-content: none;
+                width: 100%;
+            }
+
+            .continer-banr1-pick {
+                width: 98%;
+            }
+
+            .continer-banr1-pick1 {
+                width: 100%;
+            }
+
+            .pickcenter {
+                margin-left: 80px;
+                margin-top: -30px;
+                margin-bottom: -55px;
+            }
+
+            .border-left {
+    margin-left: -8%;
+}
+
+            .pickcenter {
+                margin-left: 143px;
+                margin-top: -30px;
+                margin-bottom: -55px;
+                z-index: 1;
+            }
+
+        }
+
+        .continer-banr2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid #ff0000; */
+            padding: 4%;
+            background-color: #F6F7F9;
+        }
+
+        .continer-banr2-text {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid red; */
+            padding: 1% 5%;
+            background-color: #F6F7F9;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 24%;
+            background-color: #fff;
+            /* gap: 32px; */
+            /* border: 1px solid green; */
+            border-radius: 10px;
+            padding: 1%;
+        }
+
+        .card-text {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid yellow; */
+            padding: 0 13%;
+        }
+
+        .card-text1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid yellow; */
+            padding: 0 4%;
+        }
+
+        .card-text2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid yellow; */
+            padding: 0 4%;
+        }
+
+        .card-text6 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            /* border: 1px solid red; */
+
+        }
+
+        .card-img1 {
+            border: none;
+            margin-top: 10px;
+            margin-right: -12%;
+        }
+
+        .card-img1 img {
+            min-width: 20px;
+            max-width: 35px;
+            width: 100%;
+            height: 100%;
+            /* padding-right: 70px; */
+            /* margin-right: 60px; */
+        }
+
+        .card-img2 {
+            border: none;
+            margin-top: 10px;
+            /* margin-left: 10px; */
+        }
+
+        .card-img2 img {
+            min-width: 10px;
+            max-width: 200px;
+            width: 100%;
+            height: 100%;
+            margin-left: 8%;
+        }
+
+        .card-img3 {
+            border: none;
+            /* margin-top: 10px; */
+            /* margin-left: 20px; */
+        }
+
+        .card-img3 img {
+            min-width: 2px;
+            max-width: 20px;
+            max-height: 20px;
+            width: 100%;
+            height: 100%;
+            /* padding-right: 70px; */
+            /* margin-right: 60px; */
+        }
+
+        .cardbtn {
+
+            color: #fff;
+            padding: 0px 7%;
+            border-radius: 4px;
+            gap: 8px;
+            background-color: #3563E9;
+            border: none;
+        }
+
+        h6 {
+            font-size: 20px;
+            font-weight: 700;
+            /* line-height: 30px; */
+            letter-spacing: -0.03em;
+            text-align: left;
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .continer-banr2 {
+                display: none;
+            }
+        }
+
+        .card1 {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid red; */
+
+        }
+
+        .continer-banr3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid #ff0000; */
+            padding: 0 4%;
+            background-color: #F6F7F9;
+            /* width: 100%; */
+
+        }
+
+        .card3 {
+            display: flex;
+            flex-direction: column;
+            width: 24%;
+            background-color: #fff;
+            /* gap: 32px; */
+            /* border: 1px solid green; */
+            border-radius: 10px;
+        }
+
+        .card5 {
+            display: flex;
+            flex-direction: column;
+            width: 24%;
+            background-color: #fff;
+            /* gap: 32px; */
+            /* border: 1px solid green; */
+            border-radius: 10px;
+        }
+
+        .card-text3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid yellow; */
+            padding: 0 13%;
+        }
+
+        .card-text4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid yellow; */
+            padding: 0 4%;
+            margin-top: 40px;
+        }
+
+        .card-text5 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid yellow; */
+            padding: 0 4%;
+        }
+
+        .card-img4 {
+            border: none;
+            margin-top: 10px;
+            margin-right: -12%;
+        }
+
+        .card-img4 img {
+            min-width: 20px;
+            max-width: 35px;
+            width: 100%;
+            height: 100%;
+            /* padding-right: 70px; */
+            /* margin-right: 60px; */
+        }
+
+        .card-img5 {
+            border: none;
+            margin-top: 10px;
+            /* margin-left: 10px; */
+        }
+
+        .card-img5 img {
+            min-width: 10px;
+            max-width: 200px;
+            width: 100%;
+            height: 100%;
+            /* padding-right: 70px; */
+            margin-left: 10%;
+        }
+
+        .card-img6 {
+            border: none;
+            /* margin-top: 10px; */
+            /* margin-left: 20px; */
+        }
+
+        .card-img6 img {
+            min-width: 2px;
+            max-width: 29px;
+            max-height: 20px;
+            width: 100%;
+            height: 100%;
+            /* padding-right: 70px; */
+            /* margin-right: 60px; */
+            margin-left: -5px;
+        }
+
+        .cardbtn1 {
+
+            color: #fff;
+            padding: 0px 7%;
+            border-radius: 4px;
+            gap: 8px;
+            background-color: #3563E9;
+            border: none;
+        }
+
+        .cardmin {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid red; */
+            margin-top: 15%;
+        }
+
+        .card4 {
+            display: flex;
+            flex-direction: column;
+            width: 24%;
+            background-color: #fff;
+            /* gap: 32px; */
+            /* border: 1px solid green; */
+            border-radius: 10px;
+        }
+
+        .card-text4min {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            /* border: 1px solid green; */
+        }
+
+        @media only screen and (max-width: 480px) {
+            .continer-banr3 {
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .card3 {
+                width: 24%;
+                min-width: 100%;
+                margin-right: 20px;
+                margin-top: 15px;
+            }
+
+            .card-text4 {
+                flex-direction: column;
+                justify-content: unsafe;
+                margin-top: -25px;
+            }
+
+            .cardmin {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            h6 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            .card4 {
+                display: none;
+            }
+
+            .card-img4 img {
+                margin-left: -7%;
+                max-width: 40px;
+                min-width: 30px;
+                width: 100%;
+            }
+
+            .card-img5 img {
+                min-width: 200px;
+                min-height: 100px;
+                width: 100%;
+                height: 100%;
+                margin-left: 10%;
+                margin-top: -30px;
+            }
+
+            .card-text3 {
+                padding: 3% 13% 0 13%;
+            }
+
+            .card1 {
+                display: flex;
+            }
+
+            .card5:nth-child(1) {
+                order: 2;
+            }
+
+            .card5:nth-child(2) {
+                order: 1;
+            }
+
+            .card5 {
+                width: 24%;
+                min-width: 100%;
+                margin-right: 20px;
+                margin-top: 15px;
+            }
+
+            .card-text4min {
+                justify-content: flex-start;
+            }
+
+            .card-text5 {
+                padding: 4%;
+            }
+            .card-img6 img {
+                max-width: 29px;
+                width: 100%;
+                /* padding-right: 5%; */
+            }
+            .card-img6{
+                padding-right: 5%;
+            }
+        }
+
+        .card-baner4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+            /* border: 1px solid red; */
+            background-color: #F6F7F9;
+            padding: 3% 0;
+        }
+
+        .card-baner5 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid yellow; */
+            margin-right: 92px;
+            width: 50%;
+        }
+
+        .cardbtn2 {
+            padding: 0px 40px 0px 40px;
+            border-radius: 4px;
+            gap: 8px;
+            background-color: #3563E9;
+            color: #FFFFFF;
+            border: none;
+        }
+
+
+        @media only screen and (max-width: 480px) {
+            .card-baner5 {
+                margin-right: 22px;
+                width: 68%;
+            }
+
+            .card-baner4 {
+                padding: 8% 0;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            h4 {
+                font-size: 14px;
+            }
+        }
+
+        .card-baner4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+            /* border: 1px solid red; */
+            background-color: #F6F7F9;
+            padding: 3% 0;
+        }
+
+        .card-baner5 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid yellow; */
+            margin-right: 92px;
+            width: 50%;
+        }
+
+        .cardbtn2 {
+            padding: 0px 40px 0px 40px;
+            border-radius: 4px;
+            gap: 8px;
+            background-color: #3563E9;
+            color: #FFFFFF;
+            border: none;
+        }
+
+
+        @media only screen and (max-width: 480px) {
+            .card-baner5 {
+                margin-right: 22px;
+                width: 68%;
+                padding-left: 8%;
+            }
+
+            .card-baner4 {
+                padding: 8% 0;
+            }
+
+            .cardbtn2 {
+                padding: 0 20px;
+            }
+        }
+
+        .foter {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+            padding-top: 5%;
+        }
+
+        .foter1 {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid green; */
+            justify-content: flex-start;
+            margin-left: -6%;
+            margin-right: 12%;
+        }
+
+        .foter2 {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid yellow; */
+            /* margin-left: 15%; */
+
+        }
+
+        .foter-right {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid green; */
+            width: 33%;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: -0.01em;
+            text-align: left;
+
+        }
+
+        .foter3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 30px;
+            background-color: #F6F7F9;
+        }
+
+        .foter4 {
+            display: flex;
+            background-color: #F6F7F9;
+            padding-left: 30PX;
+        }
+
+        .foter5 {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid yellow; */
+            /* margin-left: 20%; */
+            margin-right: 23%;
+            width: 45%;
+
+        }
+
+
+        @media only screen and (max-width: 480px) {
+            .foter-right {
+                display: none;
+            }
+
+            .foter {
+                justify-content: flex-start;
+                padding-left: 50px;
+                background-color: #F6F7F9;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 12px;
+                color: #90A3BF;
+            }
+        }
+
+        footer {
+            width: 94%;
+            border-bottom: 1px solid #13131329;
+            margin: 3% 3%;
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            footer {
+                display: none;
+            }
+        }
+
+        .footerbox {
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid red; */
+            justify-content: space-between;
+            padding: 0 3% 1.5% 3%;
+        }
+
+        .footerleft {
+            width: 40%;
+        }
+
+        .footeright {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid yellow; */
+            width: 25%;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .footerbox {
+                flex-direction: column;
+                padding: 1.5% 6%;
+                background-color: #F6F7F9;
+
+            }
+
+            .footerleft:nth-child(1) {
+                order: 2;
+            }
+
+            .footeright:nth-child(2) {
+                order: 1;
+            }
+
+            .footerleft {
+                width: 60%;
+            }
+
+            .footeright {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        .iconmin-bar {
+            display: none;
+        }
+
+        .brandnamemin {
+            display: none;
+        }
+
+        .search-boxmin {
+            display: none;
+        }
+
+        .search-boxmin1 {
+            display: none;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .iconmin-bar {
+                display: flex;
+            }
+
+            .iconmin-bar i {
+                width: 24%;
+                min-width: 100%;
+                font-size: 25px;
+            }
+
+            .brandnamemin {
+                display: flex;
+                padding: 0 4%;
+                margin-top: -10%;
+                margin-bottom: -10%;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .search-boxmin {
+                display: flex;
+            }
+
+            .search-boxmin1 {
+                display: flex;
+                width: 10%;
+    justify-content: center;
+    align-items: center;
+            }
+
+
+            .search-boxmin input[type="text"] {
+                border: none;
+                width: 70%;
+            }
+        }
+    </style>
+    <style>
+        .foter3 {
+            display: none;
+        }
+
+        .foter5 {
+            display: none;
+        }
+
+        .foter4 {
+            display: none;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .foter3 {
+                display: flex;
+            }
+
+            .foter5 {
+                display: flex;
+            }
+
+            .foter4 {
+                display: flex;
+            }
+        }
+    </style>
+    <header>
+        <div class="header-brandname">MORENT</div>
+        <div class="search-box">
+            <form action="Car.html">
+                <button style="background: none;border: none;">
+                </button>
+                <input type="text" placeholder="Search something here" name="search">
+            </form>
+            <i class="fa fa-server" style="margin-top: 1%;"></i>
+        </div>
+        <div class="iconmin-bar">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="header-icon">
+
+            <div class="crical"><i class="fa fa-heart"></i></div>
+            <div class="crical"><i class="fa fa-bell"></i></div>
+            <div class="crical"><i class="fa fa-gear fa-spin"></i></div>
+            <a href="dashbord.html">
+                <div class="crical-avator"><img src="Image.png" alt="Image"></div>
+            </a>
+        </div>
+
+    </header>
+    <div class="brandnamemin">
+        <h1 style="color: #3563E9;">MORENT</h1>
+    </div>
+    <div class="hader-boxmin">
+        <div class="search-boxmin">
+
+            <form action="Car.html"><button type="submit" style="border: none;background: none;"> <i
+                        class="fa fa-search"></i></button>&nbsp;
+                <input type="text" placeholder="Search something here" name="search">
+            </form>
+        </div>
+        <div class="search-boxmin1"><i class="fa fa-server"></i></div>
+    </div>
+    <div class="continr">
+        <div class="saidbar">
+            <p style="color: #90A3BF; margin-bottom: 25px; margin-top: 25px;">T Y P E</p>
+
+            <form action="/action_page.php">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Car" class="blue-chekbox">
+                <label for="vehicle1"><span style="color: #596780;">Sport</span> <span
+                        style="color: #90A3BF;">(10)</span> </label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" class="blue-chekbox">
+                <label for="vehicle2"><span style="color: #596780;">SUV </span> <span
+                        style="color: #90A3BF;">(12)</span> </label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Car" class="blue-chekbox">
+                <label for="vehicle3"><span style="color: #596780;"> MPV </span><span
+                        style="color: #90A3BF;">(16)</span></label><br>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Car" class="blue-chekbox">
+                <label for="vehicle1"> <span style="color: #596780;">Sedan </span><span
+                        style="color: #90A3BF;">(20)</span></label><br>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Car" class="blue-chekbox">
+                <label for="vehicle1"> <span style="color: #596780;">Coupe</span> <span
+                        style="color: #90A3BF;">(14)</span></label><br>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Car" class="blue-chekbox">
+                <label for="vehicle1"> <span style="color: #596780;">Hatchback</span> <span
+                        style="color: #90A3BF;">(14)</span></label><br>
+
+
+
+                <p style="color: #90A3BF; margin-bottom: 25px;">C A P A C I T Y</p>
+
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Car" class="blue-chekbox">
+                <label for="vehicle1"><span style="color: #596780;">2 Person </span> <span
+                        style="color: #90A3BF;">(10)</span> </label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" class="blue-chekbox">
+                <label for="vehicle2"><span style="color: #596780;">4 Person </span> <span
+                        style="color: #90A3BF;">(14)</span> </label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Car" class="blue-chekbox">
+                <label for="vehicle3"><span style="color: #596780;"> 6 Person </span><span
+                        style="color: #90A3BF;">(12)</span></label><br>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Car" class="blue-chekbox">
+                <label for="vehicle1"> <span style="color: #596780;">8 or More </span><span style="color: #90A3BF;">(16)
+                    </span></label><br>
+
+
+                <p style="color: #90A3BF; margin-bottom: 25px;">P R I C E</p>
+
+                <input type="range" id="car" name="car" min="0" max="100.000" style="margin-bottom: 10px;">
+                <br><label for="vol" style="color: #596780;">Max. $100.000</label>
+
+            </form>
+        </div>
+        <div class="continr-right">
+            <div class="continer-banr1">
+                <div class="continer-banr1-pick">
+
+                    <input type="radio" id="Pick - Up" name="fav-language" value="Pick - Up">
+                    <label for="Pick - Up"><b>Pick - Up</b></label><br>
+
+                    <div class="continer-banr1-pick1">
+                        <div class="pick">
+                            <p style="color: #1A202C;"><b>Locations</b></p>
+
+                            <select id="Select your city" name="Select your city" style="border: none;color: #90A3BF;">
+                                <option value="volvo">Select your city</option>
+                                <option value="volvo">chalos</option>
+                                <option value="saab">noshahr</option>
+                                <option value="fiat">karj</option>
+                                <option value="audi">qom</option>
+                            </select>
+                        </div>
+                        <div class="border-left"></div>
+                        <div class="pick">
+                            <p style="color: #1A202C;"><b>Date</b></p>
+
+                            <select id="Select your city" name="Select your city" style="border: none;color: #90A3BF;">
+                                <option value="volvo">Select your date</option>
+                                <option value="volvo">shanbeh</option>
+                                <option value="saab">1shanbeh</option>
+                                <option value="fiat">2shanbeh</option>
+                                <option value="audi">3shanbeh</option>
+                            </select>
+
+                        </div>
+                        <div class="border-left"></div>
+                        <div class="pick">
+                            <p style="color: #1A202C;"><b>Time</b></p>
+
+                            <select id="Select your city" name="Select your city" style="border: none;color: #90A3BF;">
+                                <option value="volvo">Select your time</option>
+                                <option value="volvo">8-10</option>
+                                <option value="saab">10-12</option>
+                                <option value="fiat">12-14</option>
+                                <option value="audi">14-16</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pickcenter"><img src="Switch.png" alt="image"></div>
+                <div class="continer-banr1-pick">
+
+                    <input type="radio" id="Pick - Up" name="fav-language" value="Pick - Up">
+                    <label for="Pick - Up"><b>Drop - Off</b></label><br>
+
+                    <div class="continer-banr1-pick1">
+                        <div class="pick">
+                            <p style="color: #1A202C; "><b>Locations</b></p>
+
+                            <select id="Select your city" name="Select your city" style="border: none;color: #90A3BF;">
+                                <option value="volvo">Select your city</option>
+                                <option value="volvo">chalos</option>
+                                <option value="saab">noshahr</option>
+                                <option value="fiat">karj</option>
+                                <option value="audi">qom</option>
+                            </select>
+
+
+                        </div>
+                        <div class="border-left"></div>
+                        <div class="pick">
+                            <p style="color: #1A202C;"><b>Date</b></p>
+
+                            <select id="Select your city" name="Select your city" style="border: none;color: #90A3BF;">
+
+                                <option value="volvo">Select your date</option>
+                                <option value="volvo">shanbeh</option>
+                                <option value="saab">1shanbeh</option>
+                                <option value="fiat">2shanbeh</option>
+                                <option value="audi">3shanbeh</option>
+                            </select>
+
+
+                        </div>
+                        <div class="border-left"></div>
+                        <div class="pick">
+                            <p style="color: #1A202C;"><b>Time</b></p>
+
+                            <select id="Select your city" name="Select your city" style="border: none;color: #90A3BF;">
+                                <option value="volvo">Select your time</option>
+                                <option value="volvo">8-10</option>
+                                <option value="saab">10-12</option>
+                                <option value="fiat">12-14</option>
+                                <option value="audi">14-16</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="continer-banr2">
+                <div class="card">
+                    <div class="card-text">
+                        <h6 style="margin-left: -13%;">Koenigsegg</h6>
+                        <div class="card-img1"><img src="Like.png" alt="image"></div>
+                    </div>
+                    <P style="margin:0 4%; color: #90A3BF;">Sport</P>
+                    <div class="card-img2"><img src="Car 10.png" alt="image"></div>
+                    <div class="card-text1" style="margin-top: 20%;">
+                        <div class="card-img3"><img src="gas-station.png" alt="image"></div>
+                        <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">90L</P>
+                        <div class="card-img3"><img src="Car.png" alt="image"></div>
+                        <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">Manual</P>
+                        <div class="card-img3"><img src="profile-2user.png" alt="image"></div>
+                        <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">2 People</P>
+                    </div>
+                    <div class="card-text2" style="margin-top: 7%;">
+                        <div class="card-text6">
+                            <h6>$96.00/ <span style="color: #90A3BF; font-size: 14px;">day</span></h6>
+                        </div>
+
+                        <button class="cardbtn">
+                            <p>Rent Now</p>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <h6 style="margin-left: -13%;">Nissan GT - R</h6>
+                        <div class="card-img1"><img src="heart.png" alt="image"></div>
+                    </div>
+                    <P style="margin:0 4%; color: #90A3BF;">Sport</P>
+                    <div class="card-img2"><img src="image 8.png" alt="image"></div>
+                    <div class="card-text1" style=" margin-top: 20%;">
+                        <div class="card-img3"><img src="gas-station.png" alt="image"></div>
+                        <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">80L</p>
+                        <div class="card-img3"><img src="Car.png" alt="image"></div>
+                        <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">Manual</p>
+                        <div class="card-img3"><img src="profile-2user.png" alt="image"></div>
+                        <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">2 People</p>
+                    </div>
+                    <div class="card-text2" style="margin-top: 6%;">
+                        <div class="card-text6">
+                            <h6>$80.00/</h6><span style="color: #90A3BF; font-size: 14px;">day</span>
+                        </div>
+                        <a href="Nissan GT-R.html">
+                           
+                              <button class="cardbtn" style="padding: 0 17px;">
+                                <p> Rent Now </p>
+                              </button>
+                            </a>  
+                            
+                    
+                   
+                    </div>
+                    <h5 style="text-decoration: line-through;color: #90A3BF;margin-left: 5%;margin-top: 1%;">$100.00
+                    </h5>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <h6 style="margin-left: -13%;">Rolls - Royce</h6>
+                        <div class="card-img1"><img src="Like.png" alt="image"></div>
+                    </div>
+                    <P style="margin:0 4%; color: #90A3BF;">Sport</P>
+                    <div class="card-img2"><img src="Car (3).png" alt="image"></div>
+                    <div class="card-text1" style="margin-top: 20%;">
+                        <div class="card-img3"><img src="gas-station.png" alt="image"></div>
+                        <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">70L</p>
+                        <div class="card-img3"><img src="Car.png" alt="image"></div>
+                        <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">Manual</p>
+                        <div class="card-img3"><img src="profile-2user.png" alt="image"></div>
+                        <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">4 People</p>
+                    </div>
+                    <div class="card-text2" style="margin-top: 7%;">
+                        <div class="card-text6">
+                            <h6>$96.00/</h6><span style="color: #90A3BF; font-size: 14px;">day</span>
+                        </div>
+
+                        <button class="cardbtn">
+                            <p>Rent Now</p>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <h6 style="margin-left: -13%;">Nissan GT - R</h6>
+                        <div class="card-img1"><img src="heart.png" alt="image"></div>
+                    </div>
+                    <P style="margin:0 4%; color: #90A3BF;">Sport</P>
+                    <div class="card-img2"><img src="image 8.png" alt="image"></div>
+                    <div class="card-text1" style="margin-top: 20%;">
+                        <div class="card-img3"><img src="gas-station.png" alt="image"></div>
+                        <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">80L</p>
+                        <div class="card-img3"><img src="Car.png" alt="image"></div>
+                        <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">Manual</p>
+                        <div class="card-img3"><img src="profile-2user.png" alt="image"></div>
+                        <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">2 People</p>
+                    </div>
+                    <div class="card-text2" style="margin-top: 7%;">
+                        <div class="card-text6">
+                            <h6>$80.00/</h6><span style="color: #90A3BF; font-size: 14px;">day</span>
+                        </div>
+                        
+
+                        <button class="cardbtn">
+                            <p>Rent Now</p>
+                        </button>
+                
+
+                    </div>
+                    <h5 style="text-decoration: line-through;color: #90A3BF;margin-left: 5%;margin-top: 1%;">$100.00
+                    </h5>
+
+                </div>
+            </div>
+            <div class="card1">
+                <div class="continer-banr3">
+                    <div class="card3">
+                        <div class="card-text3">
+                            <h6 style="margin-left: -13%;">All New Rush</h6>
+                            <div class="card-img4"><img src="heart.png" alt="image"></div>
+                        </div>
+                        <p style="margin:0 4%; color: #90A3BF;">SUV</p>
+                        <div class="cardmin">
+                            <div class="card-img5"><img src="Car (2).png" alt="image"></div>
+                            <div class="card-text4">
+                                <div class="card-text4min">
+                                    <div class="card-img6"><img src="gas-station.png" alt="image"></div>
+                                    <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">70L</p>
+                                </div>
+                                <div class="card-text4min">
+                                    <div class="card-img6"><img src="Car.png" alt="image"></div>
+                                    <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">Manual</p>
+                                </div>
+                                <div class="card-text4min">
+                                    <div class="card-img6"><img src="profile-2user.png" alt="image"></div>
+                                    <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">6 People
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-text5" style="margin-top: 6%;">
+                            <div class="card-text6">
+                                <h6 style="color: #1A202C;">$72.00/</h6><span
+                                    style="color: #90A3BF; font-size: 14px;">day</span>
+                            </div>
+                            <button class="cardbtn1">
+                                <p>Rent Now</p>
+                            </button>
+                        </div>
+                        <h5 style="text-decoration: line-through;color: #90A3BF;margin-left: 5%;margin-top: 1%;">
+                            $80.00</h5>
+                    </div>
+                    <div class="card3">
+                        <div class="card-text3">
+                            <h6 style="margin-left: -13%;">Nissan GT - R</h6>
+                            <div class="card-img4"><img src="Like.png" alt="image"></div>
+                        </div>
+                        <p style="margin:0 4%; color: #90A3BF;">SUV</p>
+                        <div class="cardmin">
+                            <div class="card-img5"><img src="Car (1).png" alt="image"></div>
+                            <div class="card-text4">
+                                <div class="card-text4min">
+                                    <div class="card-img6"><img src="gas-station.png" alt="image"></div>
+                                    <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">80L</p>
+                                </div>
+                                <div class="card-text4min">
+                                    <div class="card-img6"><img src="Car.png" alt="image"></div>
+                                    <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">Manual</p>
+                                </div>
+                                <div class="card-text4min">
+                                    <div class="card-img6"><img src="profile-2user.png" alt="image"></div>
+                                    <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">6 People
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-text5" style="margin-top: 9%;">
+                            <div class="card-text6">
+                                <h6 style="color: #1A202C;">$80.00/</h6><span
+                                    style="color: #90A3BF; font-size: 14px;">day</span>
+                            </div>
+                            <button class="cardbtn1">
+                                <p>Rent Now</p>
+                            </button>
+
+                        </div>
+
+                    </div>
+                    <div class="card3">
+                        <div class="card-text3">
+                            <h6 style="margin-left: -13%;">Rolls - Royce</h6>
+                            <div class="card-img4"><img src="heart.png" alt="image"></div>
+                        </div>
+                        <p style="margin:0 4%; color: #90A3BF;">SUV</p>
+                        <div class="cardmin">
+                            <div class="card-img5"><img src="Car (4).png" alt="image"></div>
+                            <div class="card-text4">
+                                <div class="card-text4min">
+                                    <div class="card-img6"><img src="gas-station.png" alt="image"></div>
+                                    <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">90L</p>
+                                </div>
+                                <div class="card-text4min">
+                                    <div class="card-img6"><img src="profile-2user.png" alt="image"></div>
+                                    <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">6 People
+                                    </p>
+                                </div>
+                                <div class="card-text4min">
+                                    <div class="card-img6"><img src="profile-2user.png" alt="image"></div>
+                                    <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">6 People
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-text5" style="margin-top: 7%;">
+                            <div class="card-text6">
+                                <h6 style="color: #1A202C;">$74.00/</h6><span
+                                    style="color: #90A3BF; font-size: 14px;">day</span>
+                            </div>
+                            <button class="cardbtn1">
+                                <p>Rent Now</p>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="card4">
+                        <div class="card-text3">
+                            <h6 style="margin-left: -13%;">Nissan GT - R</h6>
+                            <div class="card-img4"><img src="Like.png" alt="image"></div>
+                        </div>
+                        <p style="margin:0 4%; color: #90A3BF;">SUV</p>
+                        <div class="cardmin">
+                            <div class="card-img5"><img src="Car (5).png" alt="image"></div>
+                            <div class="card-text4">
+                                <div class="card-text4min">
+                                    <div class="card-img6"><img src="gas-station.png" alt="image"></div>
+                                    <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">90L</p>
+                                </div>
+                                <div class="card-text4min">
+                                    <div class="card-img6"><img src="Car.png" alt="image"></div>
+                                    <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">Manual</p>
+                                </div>
+                                <div class="card-text4min">
+                                    <div class="card-img6"><img src="profile-2user.png" alt="image"></div>
+                                    <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">6 People
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-text5" style="margin-top: 9%;">
+                            <div class="card-text6">
+                                <h6 style="color: #1A202C;">$80.00/</h6><span
+                                    style="color: #90A3BF; font-size: 14px;">day</span>
+                            </div>
+                            <button class="cardbtn1">
+                                <p>Rent Now</p>
+                            </button>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="continer-banr3" style="padding-top: 1%;">
+                <div class="card5">
+                    <div class="card-text3">
+                        <h6 style="margin-left: -13%;">MG ZX Exclusice</h6>
+                        <div class="card-img4"><img src="Like.png" alt="image"></div>
+                    </div>
+                    <p style="margin:0 4%; color: #90A3BF;">Hatchback</p>
+                    <div class="cardmin">
+                        <div class="card-img5"><img src="Car (7).png" alt="image"></div>
+                        <div class="card-text4">
+                            <div class="card-text4min">
+                                <div class="card-img6"><img src="gas-station.png" alt="image"></div>
+                                <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">70L</p>
+                            </div>
+                            <div class="card-text4min">
+                                <div class="card-img6"><img src="Car.png" alt="image"></div>
+                                <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">Manual</p>
+                            </div>
+                            <div class="card-text4min">
+                                <div class="card-img6"><img src="profile-2user.png" alt="image"></div>
+                                <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">4 People</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-text5" style="margin-top: 7%;">
+                        <div class="card-text6">
+                            <h6 style="color: #1A202C;">$80.00/</h6><span
+                                style="color: #90A3BF; font-size: 14px;">day</span>
+                        </div>
+                        <button class="cardbtn1">
+                            <p>Rent Now</p>
+                        </button>
+
+                    </div>
+                    <h5 style="text-decoration: line-through;color: #90A3BF;margin-left: 5%;margin-top: 1%;">$80.00
+                    </h5>
+                </div>
+                <div class="card5">
+                    <div class="card-text3">
+                        <h6 style="margin-left: -13%;">New MG ZS</h6>
+                        <div class="card-img4"><img src="heart.png" alt="image"></div>
+                    </div>
+                    <p style="margin:0 4%; color: #90A3BF;">SUV</p>
+                    <div class="cardmin">
+                        <div class="card-img5"><img src="Car (6).png" alt="image"></div>
+                        <div class="card-text4">
+                            <div class="card-text4min">
+                                <div class="card-img6"><img src="gas-station.png" alt="image"></div>
+                                <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">80L</p>
+                            </div>
+                            <div class="card-text4min">
+                                <div class="card-img6"><img src="Car.png" alt="image"></div>
+                                <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">Manual</p>
+                            </div>
+                            <div class="card-text4min">
+                                <div class="card-img6"><img src="profile-2user.png" alt="image"></div>
+                                <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">6 People</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-text5" style="margin-top: 7%;">
+                        <div class="card-text6">
+                            <h6 style="color: #1A202C;">$80.00/</h6><span
+                                style="color: #90A3BF; font-size: 14px;">day</span>
+                        </div>
+                        <button class="cardbtn1">
+                            <p>Rent Now</p>
+                        </button>
+
+                    </div>
+
+                </div>
+                <div class="card4">
+                    <div class="card-text3">
+                        <h6 style="margin-left: -13%;">MG ZX Excite</h6>
+                        <div class="card-4"><img src="Like.png" alt="image"></div>
+                    </div>
+                    <p style="margin:0 4%; color: #90A3BF;">Hatchback</p>
+                    <div class="cardmin">
+                        <div class="card-img5"><img src="Car (7).png" alt="image"></div>
+                        <div class="card-text4">
+                            <div class="card-text4min">
+                                <div class="card-img6"><img src="gas-station.png" alt="image"></div>
+                                <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">90L</p>
+                            </div>
+                            <div class="card-text4min">
+                                <div class="card-img6"><img src="Car.png" alt="image"></div>
+                                <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">Manual</p>
+                            </div>
+                            <div class="card-text4min">
+                                <div class="card-img6"><img src="profile-2user.png" alt="image"></div>
+                                <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">4 People</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-text5" style="margin-top: 7%;">
+                        <div class="card-text6">
+                            <h6 style="color: #1A202C;">$80.00/</h6><span
+                                style="color: #90A3BF; font-size: 14px;">day</span>
+                        </div>
+                        <button class="cardbtn1">
+                            <p>Rent Now</p>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="card4">
+                    <div class="card-text3">
+                        <h6 style="margin-left: -13%;">New MG ZS</h6>
+                        <div class="card-img4"><img src="heart.png" alt="image"></div>
+                    </div>
+                    <p style="margin:0 4%; color: #90A3BF;">SUV</p>
+                    <div class="cardmin">
+                        <div class="card-img5"><img src="Car (6).png" alt="image"></div>
+                        <div class="card-text4">
+                            <div class="card-text4min">
+                                <div class="card-img6"><img src="gas-station.png" alt="image"></div>
+                                <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">80L</p>
+                            </div>
+                            <div class="card-text4min">
+                                <div class="card-img6"><img src="Car.png" alt="image"></div>
+                                <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">Manual</p>
+                            </div>
+                            <div class="card-text4min">
+                                <div class="card-img6"><img src="profile-2user.png" alt="image"></div>
+                                <p style="margin: 0; margin-left: -10%; margin-top: 2%; color: #90A3BF;">6 People</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-text5" style="margin-top: 7%;">
+                        <div class="card-text6">
+                            <h6 style="color: #1A202C;">$80.00/</h6><span
+                                style="color: #90A3BF; font-size: 14px;">day</span>
+                        </div>
+                        <button class="cardbtn1">
+                            <p>Rent Now</p>
+                        </button>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="card-baner4 ">
+                <div class="card-baner5">
+                    <button class="cardbtn2">
+                        <p>Show more car</p>
+                    </button>
+                    <p style="color: #90A3BF;">120 Car</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="foter">
+        <div class="foter1">
+            <h2 style="color: #3563E9;"><b>MORENT</b></h2>
+            <h3 style="color: #13131399;">Our vision is to provide convenience<br> and help increase your sales
+                business.
+            </h3>
+
+        </div>
+        <div class="foter-right">
+            <div class="foter2">
+                <h6 style="color: #1A202C;">About</h6>
+                <a href="#" style="text-decoration: none;">
+                    <h5 style="color: #13131399;">How it works</h5>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <h5 style="color: #13131399;">Featured</h5>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <h5 style="color: #13131399;">Partnership</h5>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <h5 style="color: #13131399;"> Bussiness Relation</h5>
+                </a>
+
+
+
+            </div>
+            <div class="foter2">
+                <h6 style="color: #1A202C;">Community</h6>
+                <a href="#" style="text-decoration: none;">
+                    <h5 style="color: #13131399;">Events</h5>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <h5 style="color: #13131399;">Blog</h5>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <h5 style="color: #13131399;">Podcast</h5>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <h5 style="color: #13131399;">Invite a friend</h5>
+                </a>
+
+
+
+            </div>
+            <div class="foter2">
+                <h6 style="color: #1A202C;">Socials</h6>
+                <a href="#" style="text-decoration: none;">
+                    <h5 style="color: #13131399;">Discord</h5>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <h5 style="color: #13131399;">Instagram</h5>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <h5 style="color: #13131399;">Twitter</h5>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <h5 style="color: #13131399;">Facebook</h5>
+                </a>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="foter3">
+        <div class="foter5">
+            <h6 style="color: #1A202C;">About</h6>
+            <a href="#" style="text-decoration: none;">
+                <h5 style="color: #13131399;">How it works</h5>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <h5 style="color: #13131399;">Featured</h5>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <h5 style="color: #13131399;">Partnership</h5>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <h5 style="color: #13131399;"> Bussiness Relation</h5>
+            </a>
+
+
+
+        </div>
+        <div class="foter5">
+            <h6 style="color: #1A202C;">Socials</h6>
+            <a href="#" style="text-decoration: none;">
+                <h5 style="color: #13131399;">Discord</h5>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <h5 style="color: #13131399;">Instagram</h5>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <h5 style="color: #13131399;">Twitter</h5>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <h5 style="color: #13131399;">Facebook</h5>
+            </a>
+
+
+
+        </div>
+    </div>
+    <div class="foter4">
+        <div class="foter5">
+            <h6 style="color: #1A202C;">Community</h6>
+            <a href="#" style="text-decoration: none;">
+                <h5 style="color: #13131399;">Events</h5>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <h5 style="color: #13131399;">Blog</h5>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <h5 style="color: #13131399;">Podcast</h5>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <h5 style="color: #13131399;">Invite a friend</h5>
+            </a>
+        </div>
+    </div>
+    <footer></footer>
+    <div class="footerbox">
+        <div class="footerleft">
+            <p style="color: #1A202C;">©2022 MORENT. All rights reserved</p>
+        </div>
+        <div class="footeright">
+            <p style="color: #1A202C;">Privacy & Policy</p>
+            <p style="color: #1A202C;">Terms & Condition</p>
+        </div>
+    </div>
+</body>
+
+</html>

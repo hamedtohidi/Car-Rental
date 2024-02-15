@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid red; */
+            align-items: center;
+            justify-content: space-between;
+            padding: 2% 3% 2% 5%;
+        }
+
+        .header-brandname {
+            align-items: center;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 48px;
+            letter-spacing: -0.03em;
+            text-align: left;
+            color: #3563E9;
+        }
+
+        .search-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 35%;
+            border: 1px solid #C3D4E966;
+            border-radius: 70px;
+            padding: 8px 16px;
+        }
+
+
+        .search-box input[type="text"] {
+            border: none;
+            width: 70%;
+            margin: 0 8px;
+        }
+
+        .search-box input[type="text"]:focus-visible {
+            outline: none;
+        }
+
+
+        .search-box i {
+            color: #596780;
+
+
+        }
+
+        ::placeholder {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+            letter-spacing: -0.02em;
+            text-align: justified;
+            color: #596780;
+        }
+
+        .header-icon {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: right;
+            width: 20%;
+        }
+
+        .crical {
+            padding: 8px;
+            border-radius: 90px;
+            border: 1px solid #C3D4E966;
+            color: #596780;
+            align-items: center;
+            justify-content: center;
+            margin-left: 8px;
+        }
+
+        .crical-avator {
+            padding: 0;
+            border: none;
+            margin-left: 8px;
+
+        }
+
+        .crical-avator img {
+            min-width: 5px;
+            max-width: 40px;
+            width: 100%;
+            height: 100%;
+            margin-left: 8px;
+
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 48px;
+            letter-spacing: -0.03em;
+            text-align: left;
+        }
+
+
+
+
+
+        @media only screen and (max-width: 480px) {
+            header {
+                justify-content: space-between;
+                padding: 7% 4%;
+            }
+
+            .header-brandname {
+                display: none;
+            }
+
+            .search-box {
+                display: none;
+            }
+
+            .crical {
+                display: none;
+            }
+
+            .crical-avator img {
+                max-width: 30px;
+                width: 100%;
+            }
+
+            .iconmin-bar {
+                display: flex;
+                /* border: 1px solid red; */
+
+            }
+
+            .iconmin-bar i {
+
+                width: 24%;
+            }
+
+            .brandnamemin {
+                display: flex;
+                margin-top: 5%;
+
+            }
+
+            .hader-boxmin {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 4%;
+                padding-right: 4%;
+                margin-top: 10%;
+                margin-bottom: 5%;
+            }
+
+            .search-boxmin {
+                display: flex;
+                width: 78%;
+                padding: 8px 16px;
+                border-radius: 10px;
+                border: 1px solid #C3D4E966;
+
+            }
+
+            .search-boxmin input[type="text"] {
+                border: none;
+                width: 89%;
+                margin: 0 8px;
+            }
+
+            .search-boxmin input[type="text"]:focus-visible {
+                outline: none;
+            }
+
+            .search-boxmin i {
+                color: #596780;
+            }
+
+            .search-boxmin1 {
+                display: flex;
+                width: 16%;
+                border: 1px solid #C3D4E966;
+                border-radius: 10px;
+                padding: 8px 20px;
+            }
+        }
+
+        .continer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid red; */
+            background-color: #F6F7F9;
+        }
+
+        .saidbar {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid yellow; */
+            width: 20%;
+            padding-left: 1%;
+            background-color: #fff;
+        }
+
+        .continerleft {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid green; */
+            width: 36.5%;
+            margin-top: 2%;
+            padding: 1%;
+            background-color: #fff;
+            margin-bottom: 2%;
+        }
+
+        .continerright {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid blue; */
+            width: 36.5%;
+            margin-right: 2%;
+            margin-top: 2%;
+        }
+
+        .btncar {
+            background-color: #fff;
+            border-radius: 10px;
+            width: 90%;
+            height: 56px;
+            border: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .btncar:hover {
+            background-color: #3563E9;
+        }
+
+        .iconimg {
+            border: none;
+        }
+
+        .iconimg img {
+            width: 100%;
+            max-width: 26px;
+            max-height: 24px;
+            height: 100%;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .saidbar {
+                display: none;
+            }
+        }
+
+        .sidbarbox {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+        }
+
+        h6 {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: -0.03em;
+            text-align: left;
+        }
+
+        .map {
+            border: none;
+        }
+
+        .map img {
+            max-width: 520px;
+            max-height: 272px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .continer-leftmin {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid red; */
+            margin-top: 6%;
+        }
+
+        .continer-leftimg {
+            border: none
+        }
+
+        .continer-leftimg img {
+            max-width: 132px;
+            width: 100%;
+            max-height: 76px;
+            height: 100%;
+        }
+
+        .continer-leftmin1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            /* border: 1px solid green; */
+            margin-left: 6%;
+        }
+
+        .continer-leftmin2 {
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid red; */
+        }
+
+        .continer-banr1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+            background-color: #F6F7F9;
+            /* padding: 2% 4%; */
+            padding-bottom: 0;
+        }
+
+        .continer-banr1-pick {
+            width: 100%;
+            /* border: 1px solid yellow; */
+            background-color: #fff;
+            border-radius: 10px;
+            height: 254px;
+        }
+
+        .continer-banr1-pick1 {
+            width: 100%;
+            /* border: 1px solid green; */
+            display: flex;
+            flex-direction: row;
+            background-color: #fff;
+            justify-content: space-between;
+            margin-top: 3%;
+        }
+
+        .blue-chekbox:checked {
+            accent-color: #3563E9;
+        }
+
+        .pick {
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid red; */
+
+        }
+
+        .border-left {
+            border-left: 1px solid #C3D4E966;
+            height: 50px;
+            margin-top: 20px;
+            padding-left: 35px;
+
+        }
+
+        .border-bottom {
+            width: 100%;
+            border: 1px solid #C3D4E966;
+            margin-top: 7%;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .continer {
+                flex-direction: column;
+                padding: 3%;
+            }
+
+            .continerleft {
+                width: 100%;
+                margin: 0;
+            }
+
+            .continer-banr1-pick1 {
+                display: none;
+            }
+
+            .continer-left1min1 {
+                display: flex;
+                flex-direction: column;
+                /* border: 1px solid green; */
+                /* padding: 0 2%; */
+            }
+
+            .continer-left1min2 {
+                display: flex;
+                flex-direction: column;
+                /* border: 1px solid green; */
+                width: 100%;
+                /* height: 50px; */
+                /* padding: 12px 20px; */
+            }
+
+            input[type=text],
+            select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: -4% 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                box-sizing: border-box;
+                background-color: #F6F7F9;
+                color: #90A3BF;
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            .continer-banr1-pick {
+                height: 50px;
+            }
+        }
+
+        .continerrighttop {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 3%;
+            background-color: #fff;
+        }
+
+        .continerrightcenter {
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid red; */
+            background-color: #fff;
+            height: 30%;
+        }
+
+        .continer-rightimg {
+            border: none;
+        }
+
+        .continer-rightimg img {
+            max-width: 254px;
+            width: 100%;
+            max-height: 246px;
+            height: 100%;
+            margin-top: -9%;
+            margin-left: 3%;
+            position: relative;
+        }
+
+        .continerrightcenter1 {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid magenta; */
+            width: 55%;
+            /* margin-left: 5%; */
+            padding: 5%;
+        }
+
+        .box3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid firebrick; */
+            width: 100%;
+            margin-top: 4%;
+        }
+
+        .box1 {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid darkblue; */
+        }
+
+        .continerright1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid hotpink; */
+        }
+
+        .box2 {
+            display: flex;
+            flex-direction: column;
+            margin-left: -1%;
+            padding-top: 3%;
+            width: 250px;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+        }
+
+        .iconimg1 {
+            border: none;
+        }
+
+        .iconimg1 img {
+            width: 100%;
+            max-width: 16px;
+            max-height: 16px;
+            height: 100%;
+        }
+
+        .continerrightbutom {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid gold; */
+            margin-top: 5%;
+            background-color: #fff;
+            padding: 3% 3% 0 3%;
+        }
+
+        .continer-rightmin1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            /* border: 1px solid green; */
+            margin-left: 6%;
+            margin-top: 5%;
+        }
+
+        .continer-right1min1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            /* border: 1px solid green; */
+            margin-left: 6%;
+            margin-top: 5%;
+        }
+
+
+        @media only screen and (max-width: 480px) {
+            .continerright {
+                width: 100%;
+            }
+
+            .continerrighttop {
+                width: 100%;
+            }
+
+            .continer-rightmin1 {
+                margin-left: 14%;
+            }
+
+            .continer-right1min1 {
+                margin-left: -15%;
+            }
+
+            .box2 {
+                margin-top: 9%;
+                margin-left: -4%;
+            }
+
+            .iconimg1 img {
+                width: 100%;
+                max-width: 30px;
+                max-height: 13px;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        .iconmin-bar {
+            display: none;
+        }
+
+        .brandnamemin {
+            display: none;
+        }
+
+        .search-boxmin {
+            display: none;
+        }
+
+        .search-boxmin1 {
+            display: none;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .iconmin-bar {
+                display: flex;
+            }
+
+            .iconmin-bar i {
+                width: 24%;
+                min-width: 100%;
+                font-size: 25px;
+            }
+
+            .brandnamemin {
+                display: flex;
+                padding: 0 4%;
+                margin-top: -10%;
+                margin-bottom: -10%;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h1>br {
+                display: none;
+            }
+
+            .search-boxmin {
+                display: flex;
+            }
+
+            .search-boxmin1 {
+                display: flex;
+                width: 10%;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            .search-boxmin input[type="text"] {
+                border: none;
+                width: 70%;
+            }
+        }
+    </style>
+    <style>
+        .continer-left1min1 {
+            display: none;
+        }
+
+        .continer-left1min2 {
+            display: none;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .continer-left1min1 {
+                display: flex;
+            }
+
+            .continer-left1min2 {
+                display: flex;
+            }
+
+            .continerrightcenter {
+                flex-direction: column;
+            }
+
+            .continerrightcenter1 {
+                width: 100%;
+            }
+        }
+    </style>
+    <header>
+        <div class="header-brandname">MORENT</div>
+        <div class="search-box">
+            <form action="Car.html">
+                <button style="background: none;border: none;">
+                </button>
+                <input type="text" placeholder="Search something here" name="search">
+            </form>
+            <i class="fa fa-server" style="margin-top: 1%;"></i>
+        </div>
+        <div class="iconmin-bar">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="header-icon">
+
+            <div class="crical"><i class="fa fa-heart"></i></div>
+            <div class="crical"><i class="fa fa-bell"></i></div>
+            <div class="crical"><i class="fa fa-gear fa-spin"></i></div>
+            <a href="dashbord.html">
+                <div class="crical-avator"><img src="Image.png" alt="Image"></div>
+            </a>
+        </div>
+
+    </header>
+    <div class="brandnamemin">
+        <h1 style="color: #3563E9;">MORENT</h1>
+    </div>
+    <div class="hader-boxmin">
+        <div class="search-boxmin">
+
+            <form action="Car.html"><button type="submit" style="border: none;background: none;"> <i
+                        class="fa fa-search"></i></button>&nbsp;
+                <input type="text" placeholder="Search something here" name="search">
+            </form>
+        </div>
+        <div class="search-boxmin1"><i class="fa fa-server"></i></div>
+    </div>
+    <div class="continer">
+        <div class="saidbar">
+            <p style="color: #94A7CB66; margin-left: 6%;">M A I N M E N U</p>
+            <button class="btncar">
+                <div class="iconimg"><img src="home.png" style="margin-left: 76%;"></div> &nbsp;<span
+                    style="color: #90A3BF; font-size: 16px; margin-left: 7%;">Dashboard</span>
+            </button>
+            <button class="btncar" style="margin-top: 2%;">
+                <div class="iconimg"><img src="car.png" style="margin-left: 76%;"></div> &nbsp;<span
+                    style="color: #90A3BF; font-size: 16px; margin-left: 7%;">Car Rent</span>
+            </button>
+            <button class="btncar" style="margin-top: 2%;">
+                <div class="iconimg"><img src="2.png" style="margin-left: 76%;"></div> &nbsp;<span
+                    style="color: #90A3BF; font-size: 16px; margin-left: 7%;">Insight</span>
+            </button>
+            <button class="btncar" style="margin-top: 2%;">
+                <div class="iconimg"><img src="empty-wallet-change.png" style="margin-left: 76%;"></div> &nbsp;<span
+                    style="color: #90A3BF; font-size: 16px; margin-left: 7%;">Reimburse</span>
+            </button>
+            <button class="btncar" style="margin-top: 2%;">
+                <div class="iconimg"><img src="message.png" style="margin-left: 76%;"></div> &nbsp;<span
+                    style="color: #90A3BF; font-size: 16px; margin-left: 7%;">Inbox</span>
+            </button>
+            <button class="btncar" style="margin-top: 2%;">
+                <div class="iconimg"><img src="calendar.png" style="margin-left: 76%;"></div> &nbsp;<span
+                    style="color: #90A3BF; font-size: 16px; margin-left: 7%;">Calender</span>
+            </button>
+            <p style="color: #94A7CB66; margin-left: 6%; margin-top: 36%;">P R E F E R E N C E S</p>
+            <button class="btncar">
+                <div class="iconimg"><img src="setting.png" style="margin-left: 76%;"></div> &nbsp;<span
+                    style="color: #90A3BF; font-size: 16px; margin-left: 7%;">Settings</span>
+            </button>
+            <button class="btncar" style="margin-top: 2%;">
+                <div class="iconimg"><img src="info-circle.png" style="margin-left: 76%;"></div> &nbsp;<span
+                    style="color: #90A3BF; font-size: 16px; margin-left: 7%;">Help & Center</span>
+            </button>
+            <button class="btncar" style="margin-top: 2%;">
+                <div class="iconimg"><img src="briefcase.png" style="margin-left: 76%;"></div> &nbsp;<span
+                    style="color: #90A3BF; font-size: 16px; margin-left: 7%;">Dark Mode</span>
+                <div class="iconimg"><img src="Group 427320607.png" style="margin-left: 188%;"></div>
+                <div class="iconimg"><img src="Group 427320608.png" style="margin-left: 200%;"></div>
+            </button>
+            <button class="btncar" style="margin-top: 56%;">
+                <div class="iconimg"><img src="logout.png" style="margin-left: 76%;"></div> &nbsp;<span
+                    style="color: #90A3BF; font-size: 16px; margin-left: 7%;">Log Out</span>
+            </button>
+
+        </div>
+        <div class="continerleft">
+            <h6 style="color: #1A202C; margin-top: 1%;"><b>Details Rental</b></h6>
+            <div class="map"><img src="Maps.png"></div>
+            <div class="continer-leftmin">
+                <div class="continer-leftimg"><img src="Look (1).png"></div>
+                <div class="continer-leftmin1">
+                    <h1 style="color: #1A202C; margin-top: 1%; margin-left: -34%;
+                    margin-bottom: 1%;">Nissan GT - R</h1>
+                    <div class="continer-leftmin2">
+                        <p style="color:#596780; margin-top: 1%; margin-left: -34%;">Sport Car</p>
+                    </div>
+                </div>
+                <div class="continer-leftmin2">
+                    <p style="color: #3D5278;">#9761</p>
+                </div>
+            </div>
+            <div class="continer-banr1">
+                <div class="continer-banr1-pick">
+                    <form>
+                        <input type="radio" id="Pick - Up" name="fav-language" value="Pick - Up" class="blue-chekbox"
+                            style="margin-top: 7%;">
+                        <label for="Pick - Up"><b>Pick - Up</b></label><br>
+                        <div class="continer-banr1-pick1">
+                            <div class="pick">
+                                <p style="color: #1A202C;"><b>Locations</b></p>
+                                <select id="Select your city" name="Select your city"
+                                    style="border: none;color: #90A3BF;">
+                                    <option value="volvo">Select your city</option>
+                                    <option value="volvo">chalos</option>
+                                    <option value="saab">noshahr</option>
+                                    <option value="fiat">karj</option>
+                                    <option value="audi">qom</option>
+                                </select>
+                            </div>
+                            <div class="border-left"></div>
+                            <div class="pick" style="margin-left: 5%;">
+                                <p style="color: #1A202C;"><b>Date</b></p>
+                                <select id="Select your city" name="Select your city"
+                                    style="border: none;color: #90A3BF;">
+                                    <option value="volvo">Select your date</option>
+                                    <option value="volvo">shanbeh</option>
+                                    <option value="saab">1shanbeh</option>
+                                    <option value="fiat">2shanbeh</option>
+                                    <option value="audi">3shanbeh</option>
+                                </select>
+
+                            </div>
+                            <div class="border-left"></div>
+                            <div class="pick">
+                                <p style="color: #1A202C;"><b>Time</b></p>
+                                <select id="Select your city" name="Select your city"
+                                    style="border: none;color: #90A3BF;">
+                                    <option value="volvo">Select your time</option>
+                                    <option value="volvo">8-10</option>
+                                    <option value="saab">10-12</option>
+                                    <option value="fiat">12-14</option>
+                                    <option value="audi">14-16</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <div class="continer-banr1-pick1">
+                            <div class="pick">
+                                <p style="color: #1A202C;"><b>Locations</b></p>
+                                <select id="Select your city" name="Select your city"
+                                    style="border: none;color: #90A3BF;">
+                                    <option value="volvo">Select your city</option>
+                                    <option value="volvo">chalos</option>
+                                    <option value="saab">noshahr</option>
+                                    <option value="fiat">karj</option>
+                                    <option value="audi">qom</option>
+                                </select>
+                            </div>
+                            <div class="border-left"></div>
+                            <div class="pick" style="margin-left: 5%;">
+                                <p style="color: #1A202C;"><b>Date</b></p>
+                                <select id="Select your city" name="Select your city"
+                                    style="border: none;color: #90A3BF;">
+                                    <option value="volvo">Select your date</option>
+                                    <option value="volvo">shanbeh</option>
+                                    <option value="saab">1shanbeh</option>
+                                    <option value="fiat">2shanbeh</option>
+                                    <option value="audi">3shanbeh</option>
+                                </select>
+
+                            </div>
+                            <div class="border-left"></div>
+                            <div class="pick">
+                                <p style="color: #1A202C;"><b>Time</b></p>
+                                <select id="Select your city" name="Select your city"
+                                    style="border: none;color: #90A3BF;">
+                                    <option value="volvo">Select your time</option>
+                                    <option value="volvo">8-10</option>
+                                    <option value="saab">10-12</option>
+                                    <option value="fiat">12-14</option>
+                                    <option value="audi">14-16</option>
+                                </select>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="continer-left1min1">
+                <form>
+                    <div class="continer-left1min2 ">
+                        <label for="Name">
+                            <p style="color: #1A202C; margin: 1.5% 0;"><b>Locations</b></p>
+                        </label><br>
+                        <select id="Locations" name="Locations">
+                            <option value="Select your city">Kota Semarang</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select><br>
+                        <label for="Name">
+                            <p style="color: #1A202C; margin: 1.5% 0;"><b>Time</b></p>
+                        </label><br>
+                        <select id="Locations" name="Locations">
+                            <option value="Select your city">00:00</option>
+                            <option value="canada">10-12</option>
+                            <option value="usa">14-15</option>
+                        </select><br>
+                        <label for="Name">
+                            <p style="color: #1A202C; margin: 1.5% 0;"><b>Date</b></p>
+                        </label><br>
+                        <select id="Locations" name="Locations">
+                            <option value="Select your city">20 July 2022</option>
+                            <option value="canada">21 July 2022</option>
+                            <option value="usa">22 July 2022</option>
+                        </select><br><br>
+                    </div>
+                    <input type="radio" id="Pick - Up" name="fav-language" value="Pick - Up" class="blue-chekbox"
+                        style="margin-top: 4%;">
+                    <label for="Pick - Up"><b>Drop - Off</b></label><br>
+                    <div class="continer-left1min2 ">
+                        <label for="Name">
+                            <p style="color: #1A202C; margin: 1.5% 0;"><b>Locations</b></p>
+                        </label><br>
+                        <select id="Locations" name="Locations">
+                            <option value="Select your city">Kota Semarang</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select><br>
+                        <label for="Name">
+                            <p style="color: #1A202C; margin: 1.5% 0;"><b>Time</b></p>
+                        </label><br>
+                        <select id="Locations" name="Locations">
+                            <option value="Select your city">00:00</option>
+                            <option value="canada">10-12</option>
+                            <option value="usa">14-15</option>
+                        </select><br>
+                        <label for="Name">
+                            <p style="color: #1A202C; margin: 1.5% 0;"><b>Date</b></p>
+                        </label><br>
+                        <select id="Locations" name="Locations">
+                            <option value="Select your city">20 July 2022</option>
+                            <option value="canada">21 July 2022</option>
+                            <option value="usa">22 July 2022</option>
+                        </select><br><br>
+                    </div>
+                </form>
+
+
+            </div>
+            <div class="border-bottom"></div>
+
+            <div class="continer-leftmin">
+                <div class="continer-leftmin1">
+                    <h6 style="color: #1A202C; margin-top: 1%; margin-bottom: -5%; margin-left: -9%;"><b>Total Rental
+                            Price</b></h6>
+                    <p style="color: #90A3BF; margin-left: -9%;">Overall price and includes rental discount</p>
+                </div>
+                <div class="continer-leftmin2">
+                    <h1 style="color: #1A202C; margin-top: 4%;"><b>$80.00</b></h1>
+                </div>
+            </div>
+        </div>
+        <div class="continerright">
+            <div class="continerrighttop">
+                <h6 style="color: #1A202C; margin-top: 0;">Top 5 Car Rental </h6>
+                <div class=".iconimg"><img src="more.png"></div>
+            </div>
+            <div class="continerrightcenter">
+                <div class="continerright1">
+                    <div class="box1">
+                        <div class="box2">
+                            <h6 style="color: #1A202C; margin: 0;">72,030</h6>
+                            <p style="color: #90A3BF;">Rental Car</p>
+                        </div>
+                        <div class="continer-rightimg"><img src="Chart.png"></div>
+                    </div>
+
+                </div>
+                <div class="continerrightcenter1">
+                    <div class="box3">
+                        <div class="iconimg1"><img src="Mark.png"></div>
+                        <p style="color: #90A3BF; margin-top: 0;">Sport Car</p>
+                        <p style="color: #1A202C; margin-top: 0;">17,439</p>
+                    </div>
+                    <div class="box3">
+                        <div class="iconimg1"><img src="Mark (1).png"></div>
+                        <p style="color: #90A3BF; margin-top: 0; margin-left: -14%;">SUV</p>
+                        <p style="color: #1A202C; margin-top: 0;">9,478</p>
+                    </div>
+                    <div class="box3">
+                        <div class="iconimg1"><img src="Mark (2).png"></div>
+                        <p style="color: #90A3BF; margin-top: 0; margin-left: -7%;">Coupe</p>
+                        <p style="color: #1A202C; margin-top: 0;">18,197</p>
+                    </div>
+                    <div class="box3">
+                        <div class="iconimg1"><img src="Mark (3).png"></div>
+                        <p style="color: #90A3BF; margin-top: 0; margin-left: 4%;">Hatchback</p>
+                        <p style="color: #1A202C; margin-top: 0;">12,510</p>
+                    </div>
+                    <div class="box3">
+                        <div class="iconimg1"><img src="Mark (4).png"></div>
+                        <p style="color: #90A3BF; margin-top: 0; margin-left: -11%;">MPV</p>
+                        <p style="color: #1A202C; margin-top: 0;">14,406</p>
+                    </div>
+                </div>
+            </div>
+            <div class="continerrightbutom">
+                <h6 style="margin: 0; color: #1A202C;"><b>Recent Transaction</b></h6>
+                <div class="continer-leftmin">
+                    <div class="continer-leftimg" style="margin-top: 4%;"><img src="4.png"></div>
+                    <div class="continer-rightmin1">
+                        <h6 style="color: #1A202C; margin-top: 1%; margin-left: -39%;
+                    margin-bottom: 1%;">Nissan GT - R</h6>
+                        <div class="continer-leftmin2">
+                            <p style="color:#90A3BF; margin-top: 1%; margin-left: -39%;">Sport Car</p>
+                        </div>
+                    </div>
+                    <div class="continer-leftmin1">
+                        <p style="color: #90A3BF; margin-left: 20%; margin-top: 44%;">20 July</p>
+                        <div class="continer-leftmin2">
+                            <h6 style="color: #1A202C; margin-top: -9%; margin-bottom: 1%;"><b>$80.00</b></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom" style="margin-top: 0; margin-top: 2%;"></div>
+                <div class="continer-leftmin" style="margin: 0;">
+                    <div class="continer-leftimg" style="margin-top: 4%;"><img src="3.png"></div>
+                    <div class="continer-rightmin1">
+                        <h6 style="color: #1A202C; margin-top: 1%; margin-left: -34%;
+                    margin-bottom: 1%;">Koegnigsegg</h6>
+                        <div class="continer-leftmin2">
+                            <p style="color:#90A3BF; margin-top: 1%; margin-left: -34%;">Sport Car</p>
+                        </div>
+                    </div>
+                    <div class="continer-leftmin1">
+                        <p style="color: #90A3BF; margin-left: 20%; margin-top: 44%;">19 July</p>
+                        <div class="continer-leftmin2">
+                            <h6 style="color: #1A202C; margin-top: -9%; margin-bottom: 1%;"><b>$99.00</b></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom" style="margin-top: 0; margin-top: 2%;"></div>
+                <div class="continer-leftmin" style="margin: 0;">
+                    <div class="continer-leftimg" style="margin-top: 4%;"><img src="5.png"></div>
+                    <div class="continer-rightmin1">
+                        <h6 style="color: #1A202C; margin-top: 1%; margin-left: -34%;
+                    margin-bottom: 1%;">Rolls - Royce</h6>
+                        <div class="continer-leftmin2">
+                            <p style="color:#90A3BF; margin-top: 1%; margin-left: -34%;">Sport Car</p>
+                        </div>
+                    </div>
+                    <div class="continer-leftmin1">
+                        <p style="color: #90A3BF; margin-left: 20%; margin-top: 44%;">18 July</p>
+                        <div class="continer-leftmin2">
+                            <h6 style="color: #1A202C; margin-top: -9%; margin-bottom: 1%;"><b>$96.00</b></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom" style="margin-top: 0; margin-top: 2%;"></div>
+                <div class="continer-leftmin" style="margin: 0;">
+                    <div class="continer-leftimg" style="margin-top: 4%;"><img src="1.png"></div>
+                    <div class="continer-right1min1">
+                        <h6 style="color: #1A202C; margin-top: 1%; margin-left: -115%;
+                    margin-bottom: 1%;">CR - V</h6>
+                        <div class="continer-leftmin2">
+                            <p style="color:#90A3BF; margin-top: 1%; margin-left: -113%;">SUV</p>
+                        </div>
+                    </div>
+                    <div class="continer-leftmin1">
+                        <p style="color: #90A3BF; margin-left: 20%; margin-top: 44%;">17 July</p>
+                        <div class="continer-leftmin2">
+                            <h6 style="color: #1A202C; margin-top: -9%; margin-bottom: 1%;"><b>$80.00</b></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

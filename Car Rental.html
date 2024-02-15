@@ -5,11 +5,13 @@
     <title>car</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-    rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <a href="Car.html"></a>
+    <a href="dashbord.html"></a>
     <style>
         html,
         body {
@@ -43,6 +45,8 @@
 
         .search-box {
             display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             width: 35%;
             border: 1px solid #C3D4E966;
             border-radius: 70px;
@@ -52,7 +56,7 @@
 
         .search-box input[type="text"] {
             border: none;
-            width: 89%;
+            width: 70%;
             margin: 0 8px;
         }
 
@@ -63,6 +67,7 @@
 
         .search-box i {
             color: #596780;
+
 
         }
 
@@ -136,6 +141,7 @@
                 justify-content: space-between;
                 padding-left: 4%;
                 padding-right: 4%;
+                margin-bottom: 5%;
             }
 
             .search-boxmin {
@@ -279,6 +285,7 @@
             /* border: 1px solid yellow; */
             background-color: #fff;
             border-radius: 10px;
+            padding: 2% 5%;
         }
 
         .continer-banr1-pick1 {
@@ -288,13 +295,15 @@
             flex-direction: row;
             background-color: #fff;
 
+
         }
 
         .pick {
-            width: 33%;
+            width: 36%;
             display: flex;
             flex-direction: column;
             /* border: 1px solid red; */
+            margin-right: 11%;
 
         }
 
@@ -312,15 +321,20 @@
             width: 100%;
             height: 100%;
             /* padding-right: 70px; */
-            margin-right: 60px;
+            margin-right: 67px;
         }
 
         .border-left {
             border-left: 1px solid #C3D4E966;
             height: 50px;
             margin-top: 20px;
-            padding-left: 35px;
+            margin-left: 5%;
+            padding-left: 3%;
 
+        }
+
+        .blue-chekbox:checked {
+            accent-color: #3563E9;
         }
 
 
@@ -339,18 +353,14 @@
             }
 
             .pickcenter {
-                margin-left: 80px;
+                margin-left: 143px;
                 margin-top: -30px;
                 margin-bottom: -55px;
+                z-index: 1;
             }
 
             .border-left {
-                padding-left: 25px;
-            }
-
-            .pickcenter {
-                z-index: 1;
-                margin-left: 110px;
+                margin-left: -8%;
             }
 
         }
@@ -383,6 +393,7 @@
             /* gap: 32px; */
             /* border: 1px solid green; */
             border-radius: 10px;
+            padding: 1%;
         }
 
         .card-text {
@@ -562,14 +573,15 @@
                 margin-right: 0;
             }
 
-            h4 {
-                padding-left: 25px;
-                margin-left: 58px;
-
+            .card-img3 img {
+                /* margin-right: 6%; */
+                /* padding-right: 19%; */
+                max-width: 30px;
+                width: 100%;
+                max-height: 30px;
+                height: 100%;
+                margin-left: -9px
             }
-
-
-
         }
 
 
@@ -610,6 +622,7 @@
             /* gap: 32px; */
             /* border: 1px solid green; */
             border-radius: 10px;
+            padding: 1%;
         }
 
         .card5 {
@@ -620,6 +633,7 @@
             /* gap: 32px; */
             /* border: 1px solid green; */
             border-radius: 10px;
+            padding: 1%;
         }
 
         .card-text3 {
@@ -737,7 +751,7 @@
             }
 
             .card-text4min {
-                justify-content: space-between;
+                justify-content: unset;
             }
 
             .card3 {
@@ -767,10 +781,6 @@
                 justify-content: space-around;
             }
 
-            h6 {
-                font-size: 16px;
-            }
-
             p {
                 font-size: 12px;
             }
@@ -782,11 +792,6 @@
 
             .card4 {
                 display: none;
-            }
-
-            h6 {
-                margin-right: -76px;
-                margin-top: 10px;
             }
 
             .card1 {
@@ -848,13 +853,6 @@
                 padding: 8% 0;
             }
 
-            p {
-                font-size: 12px;
-            }
-
-            h4 {
-                font-size: 14px;
-            }
         }
 
         .foter {
@@ -862,6 +860,7 @@
             flex-direction: row;
             justify-content: space-around;
             /* border: 1px solid red; */
+            padding-top: 5%;
         }
 
         .foter1 {
@@ -943,56 +942,64 @@
                 color: #90A3BF;
             }
         }
-        footer{
+
+        footer {
             width: 94%;
             border-bottom: 1px solid #13131329;
             margin: 3% 3%;
 
         }
-        @media only screen and (max-width: 480px){
-           footer{
-            display: none;
-           } 
+
+        @media only screen and (max-width: 480px) {
+            footer {
+                display: none;
+            }
         }
-        .footerbox{
+
+        .footerbox {
             display: flex;
             flex-direction: row;
             /* border: 1px solid red; */
             justify-content: space-between;
-            padding:0 3% 1.5% 3%;
+            padding: 0 3% 1.5% 3%;
         }
-        .footerleft{
+
+        .footerleft {
             width: 40%;
         }
-        .footeright{
+
+        .footeright {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             /* border: 1px solid yellow; */
             width: 25%;
         }
-        @media only screen and (max-width: 480px){
-            .footerbox{
+
+        @media only screen and (max-width: 480px) {
+            .footerbox {
                 flex-direction: column;
                 padding: 1.5% 6%;
-                
+
             }
-            .footerleft:nth-child(1){
+
+            .footerleft:nth-child(1) {
                 order: 2;
             }
-            .footeright:nth-child(2){
+
+            .footeright:nth-child(2) {
                 order: 1;
             }
-            .footerleft{
+
+            .footerleft {
                 width: 60%;
             }
-            .footeright{
+
+            .footeright {
                 width: 100%;
             }
 
         }
-
-        
     </style>
 </head>
 
@@ -1013,7 +1020,17 @@
 
             .search-boxmin1 {
                 display: flex;
+                width: 10%;
+    justify-content: center;
+    align-items: center;
             }
+
+
+            .search-boxmin input[type="text"] {
+                border: none;
+                width: 70%;
+            }
+
 
 
         }
@@ -1049,10 +1066,13 @@
     <header>
         <div class="header-brandname">MORENT</div>
         <div class="search-box">
-            <form action="c:\Users\User\Desktop\car\car1"></form>
-            <i class="fa fa-search"></i>
-            <input type="text" placeholder="Search something here" name="search">
-            <i class="fa fa-server"></i>
+            <form action="Car.html">
+                <button style="background: none;border: none;">
+                    <i class="fa fa-search"></i>
+                </button>
+                <input type="text" placeholder="Search something here" name="search">
+            </form>
+            <i class="fa fa-server" style="margin-top: 1%;"></i>
         </div>
 
         <div class="header-icon">
@@ -1060,14 +1080,18 @@
             <div class="crical"><i class="fa fa-heart"></i></div>
             <div class="crical"><i class="fa fa-bell"></i></div>
             <div class="crical"><i class="fa fa-gear fa-spin"></i></div>
-            <div class="crical-avator"><img src="Image.png" alt="Image"></div>
+            <a href="dashbord.html">
+                <div class="crical-avator"><img src="Image.png" alt="Image"></div>
+            </a>
         </div>
     </header>
     <div class="hader-boxmin">
         <div class="search-boxmin">
-           
-            <form action=""><button type="submit"> <i class="fa fa-search"></i></button>
-            <input type="text" placeholder="Search something here" name="search"></form>
+
+            <form action="Car.html"><button type="submit" style="border: none;background: none;"> <i
+                        class="fa fa-search"></i></button>&nbsp;
+                <input type="text" placeholder="Search something here" name="search">
+            </form>
         </div>
         <div class="search-boxmin1"><i class="fa fa-server"></i></div>
     </div>
@@ -1094,16 +1118,17 @@
 
         </div>
     </div>
-    <div class="continer-banr1">
-        <div class="continer-banr1-pick">
-            <form action="/action_page.php">
-                <input type="radio" id="Pick - Up" name="fav-language" value="Pick - Up">
+    <form action="/action_page.php">
+        <div class="continer-banr1">
+            <div class="continer-banr1-pick">
+
+                <input type="radio" id="Pick - Up" name="fav-language" value="Pick - Up" class="blue-chekbox">
                 <label for="Pick - Up"><b>Pick - Up</b></label><br>
-            </form>
-            <div class="continer-banr1-pick1">
-                <div class="pick">
-                    <p style="color: #1A202C;"><b>Locations</b></p>
-                    <form action="/action_page.php" style="margin-top: -10px;">
+
+                <div class="continer-banr1-pick1">
+                    <div class="pick">
+                        <p style="color: #1A202C;"><b>Locations</b></p>
+
                         <select id="Select your city" name="Select your city" style="border: none;color: #90A3BF;">
                             <option value="volvo">Select your city</option>
                             <option value="volvo">chalos</option>
@@ -1111,13 +1136,11 @@
                             <option value="fiat">karj</option>
                             <option value="audi">qom</option>
                         </select>
-                    </form>
+                    </div>
+                    <div class="border-left"></div>
+                    <div class="pick">
+                        <p style="color: #1A202C;"><b>Date</b></p>
 
-                </div>
-                <div class="border-left"></div>
-                <div class="pick">
-                    <p style="color: #1A202C;"><b>Date</b></p>
-                    <form action="/action_page.php" style="margin-top: -10px;">
                         <select id="Select your city" name="Select your city" style="border: none;color: #90A3BF;">
                             <option value="volvo">Select your date</option>
                             <option value="volvo">shanbeh</option>
@@ -1125,13 +1148,12 @@
                             <option value="fiat">2shanbeh</option>
                             <option value="audi">3shanbeh</option>
                         </select>
-                    </form>
 
-                </div>
-                <div class="border-left"></div>
-                <div class="pick">
-                    <p style="color: #1A202C;"><b>Time</b></p>
-                    <form action="/action_page.php" style="margin-top: -10px;">
+                    </div>
+                    <div class="border-left"></div>
+                    <div class="pick">
+                        <p style="color: #1A202C;"><b>Time</b></p>
+
                         <select id="Select your city" name="Select your city" style="border: none;color: #90A3BF;">
                             <option value="volvo">Select your time</option>
                             <option value="volvo">8-10</option>
@@ -1139,21 +1161,21 @@
                             <option value="fiat">12-14</option>
                             <option value="audi">14-16</option>
                         </select>
-                    </form>
-                </div>
-            </div>
 
-        </div>
-        <div class="pickcenter"><img src="Switch.png" alt="image"></div>
-        <div class="continer-banr1-pick">
-            <form action="/action_page.php">
-                <input type="radio" id="Pick - Up" name="fav-language" value="Pick - Up">
+                    </div>
+                </div>
+
+            </div>
+            <div class="pickcenter"><img src="Switch.png" alt="image"></div>
+            <div class="continer-banr1-pick">
+
+                <input type="radio" id="Pick - Up" name="fav-language" value="Pick - Up" class="blue-chekbox">
                 <label for="Pick - Up"><b>Drop - Off</b></label><br>
-            </form>
-            <div class="continer-banr1-pick1">
-                <div class="pick">
-                    <p style="color: #1A202C; "><b>Locations</b></p>
-                    <form action="/action_page.php" style="margin-top: -10px;">
+
+                <div class="continer-banr1-pick1">
+                    <div class="pick">
+                        <p style="color: #1A202C; "><b>Locations</b></p>
+
                         <select id="Select your city" name="Select your city" style="border: none;color: #90A3BF;">
                             <option value="volvo">Select your city</option>
                             <option value="volvo">chalos</option>
@@ -1161,13 +1183,13 @@
                             <option value="fiat">karj</option>
                             <option value="audi">qom</option>
                         </select>
-                    </form>
 
-                </div>
-                <div class="border-left"></div>
-                <div class="pick">
-                    <p style="color: #1A202C;"><b>Date</b></p>
-                    <form action="/action_page.php" style="margin-top: -10px;">
+
+                    </div>
+                    <div class="border-left"></div>
+                    <div class="pick">
+                        <p style="color: #1A202C;"><b>Date</b></p>
+
                         <select id="Select your city" name="Select your city" style="border: none;color: #90A3BF;">
 
                             <option value="volvo">Select your date</option>
@@ -1176,13 +1198,13 @@
                             <option value="fiat">2shanbeh</option>
                             <option value="audi">3shanbeh</option>
                         </select>
-                    </form>
 
-                </div>
-                <div class="border-left"></div>
-                <div class="pick">
-                    <p style="color: #1A202C;"><b>Time</b></p>
-                    <form action="/action_page.php" style="margin-top: -10px;">
+
+                    </div>
+                    <div class="border-left"></div>
+                    <div class="pick">
+                        <p style="color: #1A202C;"><b>Time</b></p>
+
                         <select id="Select your city" name="Select your city" style="border: none;color: #90A3BF;">
                             <option value="volvo">Select your time</option>
                             <option value="volvo">8-10</option>
@@ -1190,12 +1212,14 @@
                             <option value="fiat">12-14</option>
                             <option value="audi">14-16</option>
                         </select>
-                    </form>
-                </div>
-            </div>
 
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
+    </form>
+
 
     <div class="continer-banr2-text">
         <p style="color: #90A3BF;">Popular Car</p>
@@ -1220,9 +1244,7 @@
             <div class="card-text2" style="margin-top: 7%;">
                 <div class="card-text6">
                     <h6>$99.00/</h6>
-                    <div class="card-text6min">
-                        <h4>day</h4>
-                    </div>
+                    <h4>day</h4>
                 </div>
 
                 <button class="cardbtn">
@@ -1250,9 +1272,7 @@
                 <div class="card-text6">
 
                     <h6>$80.00/</h6>
-                    <div class="card-text6min">
-                        <h4>day</h4>
-                    </div>
+                    <h4>day</h4>
                 </div>
 
                 <button class="cardbtn">
@@ -1280,9 +1300,7 @@
             <div class="card-text2" style="margin-top: 7%;">
                 <div class="card-text6">
                     <h6>$96.00/</h6>
-                    <div class="card-text6min">
-                        <h4>day</h4>
-                    </div>
+                    <h4>day</h4>
                 </div>
 
                 <button class="cardbtn">
@@ -1309,9 +1327,7 @@
             <div class="card-text2" style="margin-top: 7%;">
                 <div class="card-text6">
                     <h6>$80.00/</h6>
-                    <div class="card-text6min">
-                        <h4>day</h4>
-                    </div>
+                    <h4>day</h4>
                 </div>
 
                 <button class="cardbtn">
@@ -1353,15 +1369,17 @@
                     </div>
                 </div>
                 <div class="card-text5" style="margin-top: 7%;">
-                    <h4 style="color: #1A202C;">$72.00/</h4>
+                    <div class="card-text6" style=" margin-top: -12%;">
+                        <h6 style="color: #1A202C;">$72.00/</h6>
                     <h4 style="margin-left: -25%;">day</h4>
+                    </div>
 
                     <button class="cardbtn1">
                         <p>Rent Now</p>
                     </button>
 
                 </div>
-                <h5 style="text-decoration: line-through;color: #90A3BF;margin-left: 5%;margin-top: -10%;">$80.00</h5>
+                <h5 style="text-decoration: line-through;color: #90A3BF;margin-left: 5%;margin-top: -5%;">$80.00</h5>
             </div>
             <div class="card3">
                 <div class="card-text3">
@@ -1387,8 +1405,10 @@
                     </div>
                 </div>
                 <div class="card-text5" style="margin-top: 7%;">
-                    <h4 style="color: #1A202C;">$80.00/</h4>
+                    <div class="card-text6" style=" margin-top: -12%;">
+                    <h6 style="color: #1A202C;">$80.00/</h6>
                     <h4 style="margin-left: -25%;">day</h4>
+                    </div>
                     <button class="cardbtn1">
                         <p>Rent Now</p>
                     </button>
@@ -1420,8 +1440,10 @@
                     </div>
                 </div>
                 <div class="card-text5" style="margin-top: 7%;">
-                    <h4 style="color: #1A202C;">$74.00/</h>
-                    <h4 style="margin-left: -25%;">day</h4>
+                    <div class="card-text6" style=" margin-top: -12%;">
+                        <h6 style="color: #1A202C;">$74.00/</h6>
+                        <h4 style="margin-left: -25%;">day</h4>
+                    </div>
                     <button class="cardbtn1">
                         <p>Rent Now</p>
                     </button>
@@ -1453,8 +1475,10 @@
                 </div>
 
                 <div class="card-text5" style="margin-top: 7%;">
-                    <h4 style="color: #1A202C;">$80.00/</h4>
-                    <h4 style="margin-left: -25%;">day</h4>
+                    <div class="card-text6">
+                        <h6 style="color: #1A202C;">$80.00/</h6>
+                        <h4 style="margin-left: -25%;">day</h4>
+                    </div>
                     <button class="cardbtn1">
                         <p>Rent Now</p>
                     </button>
@@ -1490,14 +1514,16 @@
                 </div>
 
                 <div class="card-text5" style="margin-top: 7%;">
-                    <h4 style="color: #1A202C;">$76.00/</h4>
-                    <h4 style="margin-left: -25%;">day</h4>
+                    <div class="card-text6">
+                        <h6 style="color: #1A202C;">$76.00/</h6>
+                        <h4 style="margin-left: -25%;">day</h4>
+                    </div>
                     <button class="cardbtn1">
                         <p>Rent Now</p>
                     </button>
 
                 </div>
-                <h5 style="text-decoration: line-through;color: #90A3BF;margin-left: 5%;margin-top: -10%;">$80.00</h5>
+                <h5 style="text-decoration: line-through;color: #90A3BF;margin-left: 5%;margin-top: -5%;">$80.00</h5>
             </div>
             <div class="card5">
                 <div class="card-text3">
@@ -1524,8 +1550,10 @@
                 </div>
 
                 <div class="card-text5" style="margin-top: 7%;">
-                    <h4 style="color: #1A202C;">$80.00/</h4>
-                    <h4 style="margin-left: -25%;">day</h4>
+                    <div class="card-text6">
+                        <h6 style="color: #1A202C;">$80.00/</h6>
+                        <h4 style="margin-left: -25%;">day</h4>
+                    </div>
                     <button class="cardbtn1">
                         <p>Rent Now</p>
                     </button>
@@ -1558,8 +1586,10 @@
                 </div>
 
                 <div class="card-text5" style="margin-top: 7%;">
-                    <h4 style="color: #1A202C;">$74.00/</h4>
-                    <h4 style="margin-left: -25%;">day</h4>
+                    <div class="card-text6">
+                        <h6 style="color: #1A202C;">$74.00/</h6>
+                        <h4 style="margin-left: -25%;">day</h4>
+                    </div>
                     <button class="cardbtn1">
                         <p>Rent Now</p>
                     </button>
@@ -1591,8 +1621,10 @@
                 </div>
 
                 <div class="card-text5" style="margin-top: 7%;">
-                    <h4 style="color: #1A202C;">$80.00/</h4>
-                    <h4 style="margin-left: -25%;">day</h4>
+                    <div class="card-text6">
+                        <h6 style="color: #1A202C;">$80.00/</h6>
+                        <h4 style="margin-left: -25%;">day</h4>
+                    </div>
                     <button class="cardbtn1">
                         <p>Rent Now</p>
                     </button>
@@ -1615,7 +1647,8 @@
     <div class="foter">
         <div class="foter1">
             <h2 style="color: #3563E9;"><b>MORENT</b></h2>
-            <h3 style="color: #13131399;">Our vision is to provide convenience<br> and help increase your sales
+            <h3 style="color: #13131399; margin-top: -5%;">Our vision is to provide convenience<br> and help increase
+                your sales
                 business.
             </h3>
 
@@ -1627,13 +1660,13 @@
                     <h5 style="color: #13131399;">How it works</h5>
                 </a>
                 <a href="#" style="text-decoration: none;">
-                    <h5 style="color: #13131399;">Featured</h5>
+                    <h5 style="color: #13131399; margin-top: -6%;">Featured</h5>
                 </a>
                 <a href="#" style="text-decoration: none;">
-                    <h5 style="color: #13131399;">Partnership</h5>
+                    <h5 style="color: #13131399; margin-top: -6%;">Partnership</h5>
                 </a>
                 <a href="#" style="text-decoration: none;">
-                    <h5 style="color: #13131399;"> Bussiness Relation</h5>
+                    <h5 style="color: #13131399; margin-top: -6%;"> Bussiness Relation</h5>
                 </a>
 
 
@@ -1645,13 +1678,13 @@
                     <h5 style="color: #13131399;">Events</h5>
                 </a>
                 <a href="#" style="text-decoration: none;">
-                    <h5 style="color: #13131399;">Blog</h5>
+                    <h5 style="color: #13131399; margin-top: -6%;">Blog</h5>
                 </a>
                 <a href="#" style="text-decoration: none;">
-                    <h5 style="color: #13131399;">Podcast</h5>
+                    <h5 style="color: #13131399; margin-top: -6%;">Podcast</h5>
                 </a>
                 <a href="#" style="text-decoration: none;">
-                    <h5 style="color: #13131399;">Invite a friend</h5>
+                    <h5 style="color: #13131399; margin-top: -6%;">Invite a friend</h5>
                 </a>
 
 
@@ -1663,13 +1696,13 @@
                     <h5 style="color: #13131399;">Discord</h5>
                 </a>
                 <a href="#" style="text-decoration: none;">
-                    <h5 style="color: #13131399;">Instagram</h5>
+                    <h5 style="color: #13131399; margin-top: -6%;">Instagram</h5>
                 </a>
                 <a href="#" style="text-decoration: none;">
-                    <h5 style="color: #13131399;">Twitter</h5>
+                    <h5 style="color: #13131399; margin-top: -6%;">Twitter</h5>
                 </a>
                 <a href="#" style="text-decoration: none;">
-                    <h5 style="color: #13131399;">Facebook</h5>
+                    <h5 style="color: #13131399; margin-top: -6%;">Facebook</h5>
                 </a>
 
 
@@ -1734,14 +1767,16 @@
     </div>
     <footer></footer>
     <div class="footerbox">
-        <div class="footerleft"><p style="color: #1A202C;">©2022 MORENT. All rights reserved</p></div>
+        <div class="footerleft">
+            <p style="color: #1A202C;">©2022 MORENT. All rights reserved</p>
+        </div>
         <div class="footeright">
             <p style="color: #1A202C;">Privacy & Policy</p>
             <p style="color: #1A202C;">Terms & Condition</p>
         </div>
     </div>
     <p>76000<span>/dey</span></p>
-    
+
 
 </body>
 
